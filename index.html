@@ -29,9 +29,11 @@
             >Web<span class="logo-header">Studio</span></a
           >
           <ul class="header-nav">
-            <li><a href="" class="link-current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="nav-item"><a href="" class="link-current">Студия</a></li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="contact-list">
@@ -123,23 +125,31 @@
           <ul class="our-team card-set">
             <li class="our-team card-set-item">
               <img src="./images/worker1.jpg" alt="работник1" width="270" />
-              <h3 class="our-team-sub-title">Игорь Демьяненко</h3>
-              <p class="our-team-position">Product Designer</p>
+              <div class="card-content">
+                <h3 class="our-team-sub-title">Игорь Демьяненко</h3>
+                <p class="our-team-position">Product Designer</p>
+              </div>
             </li>
             <li class="our-team card-set-item">
               <img src="./images/worker2.jpg" alt="работник2" width="270" />
-              <h3 class="our-team-sub-title">Ольга Репина</h3>
-              <p class="our-team-position">Frontend Developer</p>
+              <div class="card-content">
+                <h3 class="our-team-sub-title">Ольга Репина</h3>
+                <p class="our-team-position">Frontend Developer</p>
+              </div>
             </li>
             <li class="our-team card-set-item">
               <img src="./images/worker3.jpg" alt="работник3" width="270" />
-              <h3 class="our-team-sub-title">Николай Тарасов</h3>
-              <p class="our-team-position">Marketing</p>
+              <div class="card-content">
+                <h3 class="our-team-sub-title">Николай Тарасов</h3>
+                <p class="our-team-position">Marketing</p>
+              </div>
             </li>
             <li class="our-team card-set-item">
               <img src="./images/worker4.jpg" alt="работник4" width="270" />
-              <h3 class="our-team-sub-title">Михаил Ермаков</h3>
-              <p class="our-team-position">UI Designer</p>
+              <div class="card-content">
+                <h3 class="our-team-sub-title">Михаил Ермаков</h3>
+                <p class="our-team-position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -150,7 +160,9 @@
 
     <footer class="footer">
       <div class="container">
-        <a href="" class="logo">Web<span class="logo-footer">Studio</span></a>
+        <div class="logo-block">
+          <a href="" class="logo">Web<span class="logo-footer">Studio</span></a>
+        </div>
         <address>
           <a
             href="https://goo.gl/maps/C86CedG13YVYcR8AA"

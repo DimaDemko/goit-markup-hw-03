@@ -80,25 +80,34 @@ h3 {
 
 /* Header */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
 .header-nav,
 .header-container {
-  display: flex;
   align-items: center;
-}
-.header-nav {
+  display: flex;
   gap: 50px;
 }
+
 .site-nav {
   display: flex;
+  /* display: block; */
 }
 .contact-list {
   display: flex;
   gap: 50px;
+}
+
+.header .logo {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo-block {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -133,6 +142,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -145,6 +156,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-list .contact-list.link {
@@ -154,6 +167,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-list .contact-list.link:hover,
@@ -165,10 +180,19 @@ ul {
 
 .hero {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   background-color: #2f303a;
   color: #ffffff;
   text-align: center;
+}
+
+.hero-title {
+  margin: 0 auto;
+}
+
+.header-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .hero .hero-title {
@@ -181,6 +205,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  max-width: 696px;
 }
 .button {
   display: inline-block;
@@ -203,6 +228,10 @@ ul {
 
 /* <!-- About us (чем мы занимаемся) --> */
 
+.aboutus-item {
+  width: 270px;
+}
+
 .aboutus-list,
 .aboutus-title {
   display: flex;
@@ -210,7 +239,7 @@ ul {
 }
 
 .aboutus {
-  padding-top: 94px;
+  padding-bottom: 0;
 }
 
 .aboutus .aboutus-title {
@@ -237,21 +266,19 @@ ul {
   );
 }
 
-/* .card-set-item {
-  flex-basis: 270px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-} */
-
 .our-team.card-set-item {
   flex-basis: 270px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.card-content {
+  padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .our-team-sub-title {
@@ -259,7 +286,6 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-top: 30px;
 }
 .our-team-position {
   font-weight: 400;
@@ -287,9 +313,9 @@ ul {
 }
 .logo-footer {
   color: #ffffff;
-  margin-bottom: 20px;
 }
 .footer-map {
+  display: block;
   color: #ffffff;
   text-decoration: none;
   font-family: "Roboto";
@@ -338,7 +364,6 @@ ul {
   background-color: var(--accent-color);
   padding: 6px 22px 6px;
   border-radius: 4px;
-  margin-bottom: 34px;
   border: 0;
 }
 
@@ -353,7 +378,6 @@ ul {
   text-align: center;
   padding: 6px 22px 6px;
   border-radius: 4px;
-  margin-bottom: 34px;
   border: 0;
 }
 
@@ -361,6 +385,7 @@ ul {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .button-portfolio:hover,
@@ -372,8 +397,15 @@ ul {
 
 /* <!-- Our projects (Наши проекты) --> */
 
-.projects.card-set-item {
-  border: 1px solid #eeeeee;
+.card-content {
+  width: 322;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .visual-hidden {
@@ -388,13 +420,12 @@ ul {
   overflow: hidden;
 }
 
-.projects .title {
+.projects .projects .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  margin-top: 20px;
 }
 .projects .text {
   font-weight: 400;
@@ -402,7 +433,6 @@ ul {
   line-height: 1.88;
   color: #757575;
   margin-top: 4px;
-  padding-bottom: 20px;
 }
 
 .projects a {

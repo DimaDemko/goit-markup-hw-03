@@ -105,10 +105,10 @@ h3 {
   padding-bottom: 25px;
 }
 
-.logo-block {
+/* .logo-block {
   display: flex;
   margin-bottom: 20px;
-}
+} */
 
 .logo {
   color: var(--accent-color);
@@ -142,13 +142,17 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+
+.site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .site-nav .link-current {
   color: #2196f3;
   font-weight: 500;
@@ -188,11 +192,6 @@ ul {
 
 .hero-title {
   margin: 0 auto;
-}
-
-.header-nav {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .hero .hero-title {
@@ -274,7 +273,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-.card-content {
+.card-content-team {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 10px;
@@ -312,7 +311,9 @@ ul {
   padding-bottom: 60px;
 }
 .logo-footer {
+  display: inline-block;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .footer-map {
   display: block;
@@ -397,8 +398,7 @@ ul {
 
 /* <!-- Our projects (Наши проекты) --> */
 
-.card-content {
-  width: 322;
+.card-content-projects {
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
